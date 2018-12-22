@@ -10,7 +10,8 @@
     "test": "NODE_ENV=test jest --watch",
     "test-pre-push": "NODE_ENV=test jest",
     "lint": "$(npm bin)/stylelint /src/**/*.js && $(npm bin)/eslint /src",
-    "yolo": "echo \"ErrorI shoudl file\" && exit 1"
+    "yolo": "echo \"ErrorI shoudl file\" && exit 1",
+    "yolo2": "echo \"ErrorI shoudl file\" && exit 1"
   },
   "author": "scinocco.a@gmail.com",
   "license": "ISC",
