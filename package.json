@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "test": "NODE_ENV=test jest --watch",
+    "test-pre-push": "NODE_ENV=test jest",
     "lint": "$(npm bin)/stylelint /src/**/*.js && $(npm bin)/eslint /src"
   },
   "author": "scinocco.a@gmail.com",
@@ -66,6 +67,10 @@
       ".*": "babel-jest"
     }
   },
+  "pre-push": [
+    "test-pre-push",
+    "lint"
+  ],
   "babel": {
     "env": {
       "development": {
