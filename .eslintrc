@@ -10,18 +10,7 @@
     "react/jsx-filename-extension": 0,
     "no-debugger": 1,
     "linebreak-style": 0,
-    "import/first": 2
+    "import/first": 2,
+    "no-undef": 0
   },
-  "settings": {
-    "import/resolver": {
-      "alias": {
-        "map": [
-          ["pages", "./src/pages"],
-          ["connected-components", "./src/connected-components"],
-          ["components", "./src/components"],
-          ["lib", "./src/lib"]
-        ]
-      }
-    }
-  }
 }

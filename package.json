@@ -4,9 +4,9 @@
   "description": "Team Maker App, for managing teams!",
   "main": "index.js",
   "scripts": {
-    "dev": "next -p 7777",
-    "build": "next build",
-    "start": "next start",
+    "dev": "next dev ./src",
+    "build": "next build ./src",
+    "start": "next start ./src",
     "test": "NODE_ENV=test jest --watch",
     "test-pre-push": "NODE_ENV=test jest",
     "lint": "$(npm bin)/stylelint './src/**/*.js' && $(npm bin)/eslint /src"
@@ -72,58 +72,5 @@
   "pre-push": [
     "test-pre-push",
     "lint"
-  ],
-  "babel": {
-    "env": {
-      "development": {
-        "presets": [
-          "next/babel"
-        ],
-        "plugins": [
-          [
-            "styled-components",
-            {
-              "ssr": true,
-              "displayName": true
-            }
-          ]
-        ]
-      },
-      "production": {
-        "presets": [
-          "next/babel"
-        ],
-        "plugins": [
-          [
-            "styled-components",
-            {
-              "ssr": true,
-              "displayName": true
-            }
-          ]
-        ]
-      },
-      "test": {
-        "presets": [
-          [
-            "next/babel",
-            {
-              "preset-env": {
-                "modules": "commonjs"
-              }
-            }
-          ]
-        ],
-        "plugins": [
-          [
-            "styled-components",
-            {
-              "ssr": true,
-              "displayName": true
-            }
-          ]
-        ]
-      }
-    }
-  }
+  ]
 }
