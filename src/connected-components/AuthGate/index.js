@@ -17,7 +17,7 @@ const propTypes = {
   children: PropTypes.element.isRequired,
 };
 
-const AuthRequired = props => (
+const AuthGate = props => (
   <Query query={CURRENT_USER_QUERY}>
     {({ data, loading }) => {
       if (loading) return <p>Loading...</p>;
@@ -33,6 +33,6 @@ const AuthRequired = props => (
   </Query>
 );
 
-AuthRequired.propTypes = propTypes;
+AuthGate.propTypes = propTypes;
 
-export default AuthRequired;
+export default AuthGate;
