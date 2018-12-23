@@ -10,7 +10,7 @@
     "react/jsx-filename-extension": 0,
     "no-debugger": 1,
     "linebreak-style": 0,
-    "import/first": 0
+    "import/first": 2
   },
   "settings": {
     "import/resolver": {
