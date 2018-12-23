@@ -11,6 +11,22 @@
     "no-debugger": 1,
     "linebreak-style": 0,
     "import/first": 2,
-    "no-undef": 0
+    "no-undef": 0,
+    "react/react-in-jsx-scope": 0
   },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["actions", "./src/actions"],
+          ["components", "./src/components"],
+          ["reducers", "./src/reducers"],
+          ["selectors", "./src/selectors"],
+          ["utils", "./src/utils"],
+          ["theme", "./src/theme"],
+          ["config", "./config"]
+        ]
+      }
+    }
+  }
 }

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Home = () => (
   <div>
     Hello World! This is the home page

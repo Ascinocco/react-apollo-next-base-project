@@ -1,5 +1,5 @@
-import React from 'react';
 import Head from 'next/head';
+import { APP_NAME } from 'config';
 
 const Meta = () => (
   <Head>
@@ -7,7 +7,7 @@ const Meta = () => (
     <meta charSet="utf-8" />
     <link rel="shortcut icon" href="/static/favicon.png" />
     <link rel="stylesheet" type="text/css" href="/static/nprogress.css" />
-    <title>Sick Fits!</title>
+    <title>{APP_NAME}</title>
   </Head>
 );
 

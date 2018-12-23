@@ -19,7 +19,9 @@
               "components": "./src/components",
               "connected-components": "./src/connected-components",
               "lib": "./src/lib",
-              "pages": "./src/pages"
+              "pages": "./src/pages",
+              "theme": "./src/theme",
+              "config": "./config"
             }
           }
         ]
