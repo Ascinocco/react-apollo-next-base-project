@@ -1,5 +1,9 @@
 # RE-NAG (React + Next + Apollo + Graphql) Starter
 
+## Getting Started
+  run `npm install && npm run dev`
+  That's it! :D
+
 ## What this scaffold provides
 RE-NAG provides initial configuration for your project
 It configures:
@@ -20,9 +24,9 @@ It configures:
       - theme
       - config
 
-## Getting Started
-  run `npm install && npm run dev`
-  That's it! :D
+## Usage with REST Api's
+  - npm install `apollo-link-rest`
+  - https://www.apollographql.com/docs/link/links/rest.html
 
 ## Conventions
 Each components is responsible for it's own tests and styling.
