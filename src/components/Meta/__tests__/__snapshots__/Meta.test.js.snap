@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header renders and matches the snapshot 1`] = `
+exports[`Meta renders and matches the snapshot 1`] = `
 <SideEffect(Head)>
   <meta
     content="width=device-width, initial-scale=1"

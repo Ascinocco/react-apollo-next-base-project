@@ -1,10 +1,10 @@
-import App, { Container } from 'next/app';
+import NextApp, { Container } from 'next/app';
 import { ApolloProvider } from 'react-apollo';
 
 import Page from 'components/Page';
 import createClient from 'lib/createClient';
 
-class MyApp extends App {
+class App extends NextApp {
   static async getInitialProps({ Component, ctx }) {
     let pageProps = {};
     if (Component.getInitialProps) {
@@ -29,4 +29,4 @@ class MyApp extends App {
   }
 }
 
-export default createClient(MyApp);
+export default createClient(App);

@@ -1,7 +1,7 @@
-import Document, { Head, Main, NextScript } from 'next/document';
+import NextDocument, { Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
-class AppDocument extends Document {
+class Document extends NextDocument {
   static getInitialProps({ renderPage }) {
     const sheet = new ServerStyleSheet();
     const page = renderPage(App => props => sheet.collectStyles(<App {...props} />));
@@ -22,4 +22,4 @@ class AppDocument extends Document {
   }
 }
 
-export default AppDocument;
+export default Document;

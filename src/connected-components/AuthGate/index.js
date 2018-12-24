@@ -20,7 +20,7 @@ const AuthGate = props => (
   <Query query={CURRENT_USER_QUERY}>
     {({ data, loading }) => {
       if (loading) return <p>Loading...</p>;
-      if (!data.me) {
+      if (!data.user) {
         return (
           <div>
             <p>Please Sign In before Continuing</p>
