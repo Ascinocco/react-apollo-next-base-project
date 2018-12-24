@@ -65,14 +65,15 @@
     "lint"
   ],
   "jest": {
-    "moduleFileExtensions": [
-      "js"
-    ],
-    "moduleDirectories": [
-      "node_modules"
-    ],
+    "setupTestFrameworkScriptFile": "./jest.setup.js",
+    "modulePaths": ["src"],
     "moduleNameMapper": {
-      "^@/config/([^\\.]*)$": "<rootDir>/config/$1"
+      "^components$": "<rootDir>/src/components",
+      "^connected-components$": "<rootDir>/src/connected-components",
+      "^lib$": "<rootDir>/src/lib",
+      "^pages$": "<rootDir>/src/pages",
+      "^theme$": "<rootDir>/src/theme",
+      "^config$": "<rootDir>/config"
     }
   }
 }

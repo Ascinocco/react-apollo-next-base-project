@@ -12,7 +12,7 @@ const propTypes = {
 };
 
 const defaultProps = {
-  children: {},
+  children: undefined,
 };
 
 const Page = ({ children }) => (

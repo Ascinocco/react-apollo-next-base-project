@@ -18,11 +18,10 @@
     "import/resolver": {
       "alias": {
         "map": [
-          ["actions", "./src/actions"],
           ["components", "./src/components"],
-          ["reducers", "./src/reducers"],
-          ["selectors", "./src/selectors"],
-          ["utils", "./src/utils"],
+          ["connected-components", "./src/connected-components"],
+          ["lib", "./src/lib"],
+          ["pages", "./src/pages"],
           ["theme", "./src/theme"],
           ["config", "./config"]
         ]
